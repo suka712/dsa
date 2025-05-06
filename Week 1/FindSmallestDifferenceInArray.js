@@ -1,4 +1,5 @@
 const numberOfHorses = parseInt(readline())
+
 let horses = []
 let smallestDifference = Number.MAX_SAFE_INTEGER
 
