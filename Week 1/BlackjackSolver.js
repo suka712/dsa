@@ -1,8 +1,3 @@
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
-
 const bankCards = readline().split(" ")
 const playerCards = readline().split(" ")
 
@@ -15,15 +10,17 @@ let playerHasBlackjack = hasBlackjack(playerCards)
 if (playerHasBlackjack && !bankHasBlackjack) console.log('Blackjack!')
 else if (playerScore > 21) console.log('Bank')
 else if (bankScore > 21) console.log('Player')
-else if (playerScore > bankScore) console.log('Player')
 else if (playerScore < bankScore) console.log('Bank')
+else if (playerScore > bankScore) console.log('Player')
 else console.log('Draw');
 
 function calculateScore(cards) {
+
     let totalScore = 0
     let aceCount = 0
 
     for (let card of cards) {
+
         if (!isNaN(card)) {
             totalScore += parseInt(card)
         }
@@ -44,6 +41,10 @@ function calculateScore(cards) {
 }
 
 function hasBlackjack(cards) {
-    if (cards.length !== 2) return false
+
+    if (cards.length !== 2) {
+        return false
+    }
+
     return (cards.includes("A") && (cards.includes("10") || cards.includes("J") || cards.includes("Q") || cards.includes("K")))
 }
