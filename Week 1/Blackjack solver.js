@@ -1,3 +1,8 @@
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
 const bankCards = readline().split(" ")
 const playerCards = readline().split(" ")
 
@@ -19,8 +24,6 @@ function calculateScore(cards) {
     let aceCount = 0
 
     for (let card of cards) {
-
-
         if (!isNaN(card)) {
             totalScore += parseInt(card)
         }
@@ -31,7 +34,6 @@ function calculateScore(cards) {
             totalScore += 11
             aceCount++
         }
-
         while (totalScore > 21 && aceCount > 0) {
             totalScore -= 10
             aceCount--
