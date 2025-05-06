@@ -36,9 +36,9 @@ for (let i = 0; i < numberOfOrders; i++) {
     })
 }
 
-for (order of orderList) {
+for (const order of orderList) {
 
-    for (item of itemList) {
+    for (const item of itemList) {
 
         if (!order.isFulfilled && !item.isSold && item.category === order.category && item.size === order.size) {
             order.price = item.price
@@ -48,7 +48,7 @@ for (order of orderList) {
     }
 }
 
-for (order of orderList) {
+for (const order of orderList) {
     if (order.isFulfilled === true) {
         console.log(order.price)
     }
