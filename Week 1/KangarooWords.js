@@ -1,5 +1,3 @@
-// TODO: something's wrong
-
 const numberOfSeries = parseInt(readline());
 
 for (let i = 0; i < numberOfSeries; i++) {
@@ -9,13 +7,13 @@ for (let i = 0; i < numberOfSeries; i++) {
 
     let words = readline().split(", ")
 
-    for (let j = 0; j < words.length; j++) {
+    for (let i = 0; i < words.length; i++) {
 
-        for (let k = 0; k < words.length; k++) {
+        for (let j = 0; j < words.length; j++) {
 
-            if (j !== k && isJoey(words[k], words[j])) {
-                kangarooWord = words[j]
-                joeyList.push(words[k])
+            if (i !== j && isJoey(words[j], words[i])) {
+                kangarooWord = words[i]
+                joeyList.push(words[j])
             }
         }
     }

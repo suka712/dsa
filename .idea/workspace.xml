@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="" />
+    <list default="true" id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 1/KangarooWords.js" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1/KangarooWords.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +67,7 @@
       <updated>1746563886482</updated>
       <workItem from="1746563887711" duration="787000" />
       <workItem from="1746564698021" duration="6642000" />
+      <workItem from="1746590979967" duration="2803000" />
     </task>
     <servers />
   </component>
