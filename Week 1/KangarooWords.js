@@ -1,40 +1,48 @@
-const numberOfSeries = parseInt(readline());
+const numberOfSeries = parseInt(readline())
+let results = []
 
 for (let i = 0; i < numberOfSeries; i++) {
 
-    let joeyList = []
-    let kangarooWord
+    const words = readline().split(", ").sort()
+    const resultTemplates = []
 
-    let words = readline().split(", ")
+    for (let a = 0; a < words.length; a++) {
 
-    for (let i = 0; i < words.length; i++) {
+        const kangarooWord = words[a]
+        const joeysList = []
 
-        for (let j = 0; j < words.length; j++) {
+        for (let b = 0; b < words.length; b++) {
 
-            if (i !== j && isJoey(words[j], words[i])) {
-                kangarooWord = words[i]
-                joeyList.push(words[j])
+            if (a !== b && isJoey(words[b], kangarooWord)) {
+                joeysList.push(words[b])
             }
+        }
+
+        if (joeysList.length > 0) {
+            joeysList.sort()
+            resultTemplates.push(kangarooWord + ": " + joeysList.join(", "))
         }
     }
 
-    console.log(words)
-    console.log(kangarooWord + ": " + joeyList.join(", "))
+    for (const resultTemplate of resultTemplates) {
+        results.push(resultTemplate)
+    }
 }
 
-function isJoey(word, containerWord) {
+if (results.length > 0) {
+    results.sort()
+    for (const result of results) { console.log(result) }
+}
+else {
+    console.log("NONE")
+}
 
-    const letter = word.split('')
-    const containerLetter = containerWord.split('')
+function isJoey(joey, kangaroo) {
+    let i = 0
 
-    let i = 0;
-    let j = 0;
-
-    while (i < letter.length && j < containerLetter.length) {
-
-        if (letter[i] === containerLetter[j]) {i++}
-        j++
+    for (let j = 0; j < kangaroo.length; j++) {
+        if (joey[i] === kangaroo[j]) {i++}
     }
 
-    return i === letter.length
+    return i === joey.length
 }
