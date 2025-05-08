@@ -17,7 +17,7 @@ for (let i = 0; i < numberOfSeries; i++) {
                 joeysList.push(words[b])
             }
         }
-// 
+
         if (joeysList.length > 0) {
             joeysList.sort()
             resultTemplates.push(kangarooWord + ": " + joeysList.join(", "))
