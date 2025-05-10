@@ -10,12 +10,10 @@ function isMatch(childPairs, motherPairs, fatherPairs) {
         let f1 = fatherPairs[i][0]
         let f2 = fatherPairs[i][1]
 
-        // Two possibilities can happen
-        // Gene1 is from mother, Gene2 is from father
         const condition1 = (c1 === m1 || c1 === m2 && c2 === f1 || c2 === f2)
-        // Gene1 is from father, Gene2 is from mother
+
         const condition2 = (c1 === f1 || c1 === f2 && c2 === m1 || c2 === m2)
-        // If neither is true, return false
+
         if (!condition1 && !condition2) {
             return false
         }
