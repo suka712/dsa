@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 1/SudokuMonster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 1/WorstPossibleCoinPick.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <workItem from="1746788674198" duration="553000" />
       <workItem from="1746846205905" duration="3393000" />
       <workItem from="1746868100242" duration="20000" />
-      <workItem from="1746893326066" duration="645000" />
+      <workItem from="1746893326066" duration="1340000" />
     </task>
     <servers />
   </component>
