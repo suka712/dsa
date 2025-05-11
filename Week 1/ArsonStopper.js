@@ -162,6 +162,7 @@ for (let x = 0; x < 6; x++) {
         }
     }
 }
+
 let treesSavedCount = 0
 for (let x = 0; x < 6; x++) {
     for (let y = 0; y < 6; y++) {
@@ -171,14 +172,8 @@ for (let x = 0; x < 6; x++) {
     }
 }
 
-console.error(treesSavedCount)
-if (treesSavedCount < 6) {
-    console.log('JUST RUN')
-    return
-}
-
 console.error(grid)
-if (treeToCutCount === 0) {
+if (treeToCutCount === 0 || treesSavedCount < 6) {
     console.log('JUST RUN')
     return
 }
