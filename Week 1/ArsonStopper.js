@@ -4,6 +4,19 @@ let treeToCutCount = 0
 for (let i = 0; i < 6; i++) {
     grid.push(readline().split('').map(spot => {return spot === 'o'? '=' : spot}))
 }
+let hasFire = false
+for (let x = 0; x < 6; x++) {
+    for (let y = 0; y < 6; y++) {
+        if (grid[x][y] === '*') {
+            hasFire = true
+        }
+    }
+}
+
+if(!hasFire) {
+    console.log('RELAX')
+    return
+}
 
 for (let x = 0; x < 6; x++) {
     for (let y = 0; y < 6; y++) {
@@ -54,7 +67,7 @@ for (let x = 0; x < 6; x++) {
             // RIGHTWARDS TWICE
             if (y + 1 >= 0 && y + 1 < 6) {
                 if (grid[x][y + 1] === '#') {
-                    grid[x][y - 1] = 'X'
+                    grid[x][y + 1] = 'X'
                     treeToCutCount++
                 }
             }
@@ -64,15 +77,104 @@ for (let x = 0; x < 6; x++) {
                     treeToCutCount++
                 }
             }
-            // LEFT-UPWARDS
-            if (y + 1 >= 0 && y + 1 < 6) {
-                if (grid[x][y + 1] === '#') {
-                    grid[x][y - 1] = 'X'
+            // SINGLE DIAGONAL, 4 in total
+            if (y - 1 >= 0 && y - 1 < 6 && x - 1 >= 0 && x - 1 < 6) {
+                if (grid[x - 1][y - 1] === '#') {
+                    grid[x - 1][y - 1] = 'X'
+                    treeToCutCount++
+                }
+            }
+            if (y + 1 >= 0 && y + 1 < 6 && x + 1 >= 0 && x + 1 < 6) {
+                if (grid[x + 1][y + 1] === '#') {
+                    grid[x + 1][y + 1] = 'X'
+                    treeToCutCount++
+                }
+            }
+            if (y + 1 >= 0 && y + 1 < 6 && x - 1 >= 0 && x - 1 < 6) {
+                if (grid[x - 1][y + 1] === '#') {
+                    grid[x - 1][y + 1] = 'X'
+                    treeToCutCount++
+                }
+            }
+            if (y - 1 >= 0 && y - 1 < 6 && x + 1 >= 0 && x + 1 < 6) {
+                if (grid[x + 1][y - 1] === '#') {
+                    grid[x + 1][y - 1] = 'X'
+                    treeToCutCount++
+                }
+            }
+            // TWO DIAGONAL, 4 in total
+            if (y - 2 >= 0 && y - 2 < 6 && x - 2 >= 0 && x - 2 < 6) {
+                if (grid[x - 2][y - 2] === '#') {
+                    grid[x - 2][y - 2] = 'X' // Directly diagonal
+                    treeToCutCount++
+                }
+                if (grid[x - 2][y - 1] === '#') {
+                    grid[x - 2][y - 1] = 'X'
+                    treeToCutCount++
+                }
+                if (grid[x - 1][y - 2] === '#') {
+                    grid[x - 1][y - 2] = 'X'
+                    treeToCutCount++ // Checks out
+                }
+            }
+            if (y + 2 >= 0 && y + 2 < 6 && x + 2 >= 0 && x + 2 < 6) {
+                if (grid[x + 2][y + 2] === '#') {
+                    grid[x + 2][y + 2] = 'X' // Directly diagonal
+                    treeToCutCount++
+                }
+                if (grid[x + 2][y + 1] === '#') {
+                    grid[x + 2][y + 1] = 'X'
+                    treeToCutCount++
+                }
+                if (grid[x + 1][y + 2] === '#') {
+                    grid[x + 1][y + 2] = 'X'
+                    treeToCutCount++ // Checks out
+                }
+            }
+            if (y - 2 >= 0 && y - 2 < 6 && x + 2 >= 0 && x + 2 < 6) {
+                if (grid[x + 2][y - 2] === '#') {
+                    grid[x + 2][y - 2] = 'X' // Directly diagonal
+                    treeToCutCount++
+                }
+                if (grid[x + 2][y - 1] === '#') {
+                    grid[x + 2][y - 1] = 'X'
+                    treeToCutCount++
+                }
+                if (grid[x + 1][y - 2] === '#') {
+                    grid[x + 1][y - 2] = 'X'
+                    treeToCutCount++ // y- x+ checks out
+                }
+            }
+            if (y + 2 >= 0 && y + 2 < 6 && x - 2 >= 0 && x - 2 < 6) {
+                if (grid[x - 2][y + 2] === '#') {
+                    grid[x - 2][y + 2] = 'X' // Directly diagonal
+                    treeToCutCount++
+                }
+                if (grid[x - 2][y + 1] === '#') {
+                    grid[x - 2][y + 1] = 'X'
+                    treeToCutCount++
+                }
+                if (grid[x - 1][y + 2] === '#') {
+                    grid[x - 1][y + 2] = 'X'
                     treeToCutCount++
                 }
             }
         }
     }
+}
+let treesSavedCount = 0
+for (let x = 0; x < 6; x++) {
+    for (let y = 0; y < 6; y++) {
+        if (grid[x][y] === '#') {
+            treesSavedCount++
+        }
+    }
+}
+
+console.error(treesSavedCount)
+if (treesSavedCount < 6) {
+    console.log('JUST RUN')
+    return
 }
 
 console.error(grid)
