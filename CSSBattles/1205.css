@@ -1,0 +1,43 @@
+<div class="top">
+</div>
+<div class="bottom">
+<div class="middle">
+<div class="super-inner"></div>
+</div>
+</div>
+
+<style>
+ body {
+     background-color: #ED6A9D;
+ }
+.top {
+    width: 180px;
+    height: 90.5px;
+    border-radius: 90px 90px 0px 0px;
+    margin: 2.5px 100.5px 10px 100.5px;
+    background: #30383F;
+    position: fixed;
+}
+.bottom {
+    width: 300px;
+    height: 250px;
+    margin: 91px 10px 10px 40px;
+    background: #30383F;
+    position: fixed;
+}
+.middle {
+    width: 180px;
+    height: 140px;
+    margin: 0px 100px 10px 60.5px;
+    background: #ED6A9D;
+    position: fixed;
+}
+.super-inner {
+    width: 60px;
+    height: 80px;
+    border-radius: 0px 0px 0px 0px;
+    background: #30383F;
+    margin: 0px 10px 10px 60px;
+    position: fixed;
+}
+</style>
