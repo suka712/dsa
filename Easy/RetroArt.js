@@ -8,7 +8,7 @@ for (ingredient of recipe) {
     // Either they're fully number, or isn't
     // If it isn't fully number (4z, 7e, 88sp)
     if (!isPureNumber(ingredient)) {
-        let tempCount = ''
+        let tempCount = 0
         let tempPrint = ''
         // Parsing one single character
         for (let character of ingredient) {
@@ -24,11 +24,12 @@ for (ingredient of recipe) {
         if (tempPrint === 'sp') { tempPrint = ' ' }
         else if (tempPrint === 'bS') { tempPrint = '\\' }
         else if (tempPrint === 'sQ') { tempPrint = '\''}
-        else if (tempPrint === 'nl') { tempPrint = '\n'}
+        else if (tempPrint === 'nl') {
+            tempPrint = '\n'
+            tempCount = 1
+        }
 
-        // If there is no numeric prefix, ie 'nl', set the default count to 0
-        image += tempPrint.repeat(tempCount === '' ? 1 : parseInt(tempCount));
-
+        image += tempPrint.repeat(tempCount)
     }
     // If it is fully a number (32, 77, 556)
     else if (isPureNumber(ingredient)) {
