@@ -1,0 +1,52 @@
+<div class="stem">
+</div>
+<div class="shroom"></div>
+<div class="ball-right"></div>
+<div class="ball-left"></div>
+
+<style>
+ body {
+     background: #E3CC9E;
+     align-items: center;
+ }
+.stem {
+    width: 40px;
+    height: 200px;
+    align-items: center;
+    margin: 100 200 200 170;
+    background: #D95F5B;
+    position: fixed;
+}
+.shroom {
+    width: 240;
+    height: 122;
+    border-radius: 150px 150px 0px 0px;
+    position: fixed;
+    margin: 20 0 0 70;
+    background: #D95F5B;
+}
+.ball-right {
+    width: 85;
+    height: 85;
+    border-radius: 50%;
+    position: fixed;
+    margin: 95 0 0 70;
+    background: #D95F5B;
+}
+.ball-left {
+    width: 85;
+    height: 85;
+    border-radius: 50%;
+    position: fixed;
+    margin: 95 0 0 230;
+    background: #D95F5B;
+}
+</style>
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+
+<!-- SCORING -->
+<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
+
+<!-- IMPORTANT: remove the comments before submitting -->
