@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Easy/BadPractice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,6 +81,7 @@
       <workItem from="1747056149293" duration="364000" />
       <workItem from="1747101685597" duration="622000" />
       <workItem from="1747147469909" duration="1035000" />
+      <workItem from="1747211168892" duration="636000" />
     </task>
     <servers />
   </component>
