@@ -1,0 +1,42 @@
+<div class="drop">
+<div class="circle-cut left"></div>
+<div class="circle-cut right"></div>
+</div>
+
+<style>
+ body {
+     background: #243D83;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+.drop {
+    position: relative;
+    width: 165px;
+    height: 230px;
+    background: #5AA4B7;
+    clip-path: polygon(50% 0%, 100% 30%, 100% 100%, 0% 100%, 0% 30%);
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.circle-cut {
+    position: absolute;
+    top: 60px;
+    width: 90px;
+    height: 90px;
+    background: #243D83;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.left {
+    left: -50px;
+}
+
+.right {
+    right: -50px;
+}
+</style>
