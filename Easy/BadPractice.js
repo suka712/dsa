@@ -7,7 +7,7 @@ let pixels = []
 
 let currentColor = '*' // Doesn't hard code to swap later on
 let index = 0;
-
+// git test changes
 for (let runLength of input) {
     for (let i = 0; i < runLength; i++) {
         if (index >= totalPixels) break

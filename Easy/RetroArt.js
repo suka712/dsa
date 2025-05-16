@@ -31,7 +31,7 @@ for (ingredient of recipe) {
 
         image += tempPrint.repeat(tempCount)
     }
-    // If it is fully a number (32, 77, 556)
+    // Little changes
     else if (isPureNumber(ingredient)) {
         let tempCount = 0
         let tempPrint = ingredient
