@@ -25,7 +25,7 @@ function pick_option_index(num_of_options) {
     return random_seed % num_of_options
 }
 
-// Step 3: Generate output text // Test
+// Step 3: Generate output text // Test // Test 2
 const output = seed.split(' ')
 
 while (output.length < length) { // goes until the output is at the requested length
