@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Medium/HanoiTower.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2wjnX7wTbuxkSe0TVtm0XMSoIlO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.Blackjack solver.js.executor": "Run",
+    "Node.js.HanoiTower.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/khiem/codingane-puzzles",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="487922f6-c765-4e84-a4c0-3eff04645f65" name="Changes" comment="" />
+      <created>1746563886482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746563886482</updated>
+      <workItem from="1746563887711" duration="787000" />
+      <workItem from="1746564698021" duration="6642000" />
+      <workItem from="1746590979967" duration="2803000" />
+      <workItem from="1746612845973" duration="692000" />
+      <workItem from="1746643325606" duration="904000" />
+      <workItem from="1746788674198" duration="553000" />
+      <workItem from="1746846205905" duration="3393000" />
+      <workItem from="1746868100242" duration="20000" />
+      <workItem from="1746893326066" duration="4168000" />
+      <workItem from="1746964687837" duration="5723000" />
+      <workItem from="1747018613606" duration="123000" />
+      <workItem from="1747019560946" duration="3064000" />
+      <workItem from="1747056149293" duration="364000" />
+      <workItem from="1747101685597" duration="622000" />
+      <workItem from="1747147469909" duration="1035000" />
+      <workItem from="1747211168892" duration="636000" />
+      <workItem from="1747236830263" duration="646000" />
+      <workItem from="1747269045132" duration="2409000" />
+      <workItem from="1747491611086" duration="1456000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
