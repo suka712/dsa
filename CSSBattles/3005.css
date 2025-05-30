@@ -1,0 +1,69 @@
+<div class="a"></div>
+<div class="b"></div>
+<div class="c"></div>
+<div class="z"></div>
+<div class="a1"></div>
+<div class="b1"></div>
+<div class="c1"></div>
+<style>
+  body {
+    background-color: #594C94;
+    align-items: fixed;
+  }
+  .a {
+    position: absolute;
+    margin: 13 0 0 10;
+    border-radius: 10px 10px 10px 10px;
+    width: 80;
+    height: 80;
+    background: #BFE33A;
+  }
+  .b {
+    position: absolute;
+    margin: 33 0 0 60;
+    border-radius: 10px 10px 10px 10px;
+    width: 90;
+    height: 60;
+    background: #BFE33A;
+  }
+  .c {
+    position: absolute;
+    margin: 53 0 0 100;
+    border-radius: 10px 10px 0px 10px;
+    width: 92;
+    height: 40;
+    background: #BFE33A;
+  }
+  .a1 {
+    position: absolute;
+    margin: 192 0 0 290;
+    border-radius: 10px 10px 10px 10px;
+    width: 80;
+    height: 80;
+    background: #BFE33A;
+  }
+  .b1 {
+    position: absolute;
+    margin: 192 0 0 230;
+    border-radius: 10px 10px 10px 10px;
+    width: 90;
+    height: 60;
+    background: #BFE33A;
+  }
+  .c1 {
+    position: absolute;
+    margin: 192 0 0 190;
+    border-radius: 0px 0px 0px 10px;
+    width: 92;
+    height: 40;
+    background: #BFE33A;
+  }
+  .z {
+    position: absolute;
+    margin: 92 0 0 170;
+    border-radius: 0px 10px 0px 10px;
+    width: 40;
+    height: 100;
+    background: #BFE33A;
+  }
+</style>
