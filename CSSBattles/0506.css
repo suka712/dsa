@@ -1,0 +1,45 @@
+<div class="outer">
+  <div class="outter-c"> <div class="inner-c"></div></div>
+  <div class="outter-r"></div>
+  <div class="inner-r"></div>
+  <div class="lower-r"></div>
+</div>
+<div class="cut"></div>
+<style>
+  body{ margin:0; background:#394257 }
+  .outer{
+    position:relative
+  }
+  .outter-r {
+    position:absolute;
+    width:180;height:200;
+    background:#EED9D9;top:30px;left:110px
+  }
+  .inner-r {
+    position:absolute;
+    width:100;height:160;
+    background:#394257;top:70;left:150;
+  }
+  .lower-r {
+    position:absolute;
+    width:1000;height:40;
+    background:#EED9D9;top:230
+  }
+  .outter-c {
+  position:absolute;
+  width:340px;height:340px;
+  background:#EED9D9;top:60px;left:30px;
+  border-radius:50%;
+  }
+  .inner-c {
+  position:absolute;
+  width:260px;height:260px;
+  background:#394257;top:40px;left:40px;
+  border-radius:50%;
+  }
+  .cut {
+    position:absolute;
+    width:1000;height:40;
+    background:#394257;top:270;
+  }
+</style>
