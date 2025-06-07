@@ -9,6 +9,9 @@ let treeToCutCount = 0
 for (let i = 0; i < 6; i++) {
     grid.push(readline().split('').map(spot => {return spot === 'o'? '=' : spot}))
 }
+
+// This is an example feature comment
+
 let hasFire = false
 for (let x = 0; x < 6; x++) {
     for (let y = 0; y < 6; y++) {
