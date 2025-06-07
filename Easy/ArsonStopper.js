@@ -3,6 +3,8 @@
 let grid = []
 let treeToCutCount = 0
 
+// This is a comment from the feature branch
+
 for (let i = 0; i < 6; i++) {
     grid.push(readline().split('').map(spot => {return spot === 'o'? '=' : spot}))
 }
