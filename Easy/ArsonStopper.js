@@ -2,11 +2,11 @@
 // This is another bug fix
 // This is also another bug fix
 
-// This comment should exist only on bug-fix branch
 let grid = []
 let treeToCutCount = 0
 
 // This is a comment from the feature branch
+// This comment should exist only on bug-fix branch
 
 for (let i = 0; i < 6; i++) {
     grid.push(readline().split('').map(spot => {return spot === 'o'? '=' : spot}))
