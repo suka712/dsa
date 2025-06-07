@@ -1,4 +1,6 @@
 # this is an attempt at implementing binary search 
+# this file still exist on the feature branch
+# hello from feature
 import math
 
 numbers = [15, 28 , 66, 4, 3, 77, 2, 12, 1]
